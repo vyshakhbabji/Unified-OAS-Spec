@@ -393,8 +393,8 @@ x-tagGroups:
 paths:
   /accounts:
     get:
-      description: List merchant objects
-      operationId: ListAccounts
+      description: List SubAccount objects
+      operationId: ListSubAccounts
       parameters:
         - $ref: '#/components/parameters/PageNumberQueryParam'
         - $ref: '#/components/parameters/ResultsPerPageQueryParam'
@@ -408,8 +408,8 @@ paths:
       tags:
         - Accounts
     post:
-      description: Creates a merchant object
-      operationId: CreateMerchant
+      description: Creates a SubAccount object
+      operationId: CreateSubAccount
       parameters:
         - $ref: '#/components/parameters/ShippoApiVersionHeader'
         - *ref_0
@@ -418,12 +418,12 @@ paths:
       responses:
         '200':
           $ref: '#/components/responses/singleMerchantResponse'
-      summary: Create a merchant
+      summary: Create a SubAccount
       tags:
         - Accounts
     put:
-      description: Updates a merchant object
-      operationId: UpdateMerchant
+      description: Updates a SubAccount object
+      operationId: UpdateSubAccount
       parameters:
         - $ref: '#/components/parameters/ShippoApiVersionHeader'
         - *ref_0
@@ -432,7 +432,7 @@ paths:
       responses:
         '200':
           $ref: '#/components/responses/singleMerchantResponse'
-      summary: Update a merchant
+      summary: Update a SubAccount
       tags:
         - Accounts
   /addresses:
